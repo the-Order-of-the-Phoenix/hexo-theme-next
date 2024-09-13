@@ -36,6 +36,11 @@
           {%- include '_partials/page/categories.njk' -%}
         {% elif page.type === 'schedule' %}
           {%- include '_partials/page/schedule.njk' -%}
+          {% elif page.type === 'issue' %}
+        {% include '_customs/issue.njk' %}
+      {% elif page.type === 'works' %}
+        {{ page.content }}
+        {% include '_customs/works.njk' %}
         {% else %}
           {{ page.content }}
         {%- endif %}

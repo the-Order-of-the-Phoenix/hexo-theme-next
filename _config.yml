@@ -14,7 +14,7 @@ cache:
   enable: true
 
 # Remove unnecessary files after hexo generate.
-minify: false
+minify: true
 
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -43,7 +43,7 @@ scheme: Muse
 #scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: auto
 
 
 # ---------------------------------------------------------------
@@ -96,11 +96,13 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  # works: /works || fa fa-home
+  issue: /issue || fa fa-home
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -108,7 +110,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -143,7 +145,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.gif
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -157,10 +159,10 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
-  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
-  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  GitHub: https://github.com/aak1247 || fab fa-github
+  E-Mail: mailto:aak1247@126.com || fa fa-envelope
+  # Weibo: https://weibo.com/yourname || fab fa-weibo
+  # Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
@@ -175,11 +177,12 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: fa fa-globe
+  title: Links
   # Available values: block | inline
   layout: block
 
 links:
-  #Title: https://example.com
+  My Company: https://www.hive-intel.com
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -205,7 +208,7 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2017
 
   # Icon between year and copyright info.
   icon:
@@ -225,14 +228,14 @@ footer:
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: 陕ICP备19000654号
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
-    gongan_num:
+    gongan_num: https://beian.miit.gov.cn
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
-    gongan_icon_url:
+    gongan_icon_url: https://beian.mps.gov.cn/img/head-logo2.4d29d9b1.png
 
 
 # ---------------------------------------------------------------
@@ -269,12 +272,12 @@ tag_icon: false
 # Front-matter variable (nonsupport animation).
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
-  enable: false
-  animation: false
+  enable: true
+  animation: true
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
