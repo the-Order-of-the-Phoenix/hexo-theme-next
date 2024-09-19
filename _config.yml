@@ -161,6 +161,7 @@ site_state: true
 social:
   GitHub: https://github.com/aak1247 || fab fa-github
   E-Mail: mailto:aak1247@126.com || fa fa-envelope
+  Zhihu: https://www.zhihu.com/people/liu-ya-hui-61/activities || fab fa-zhihu
   RSS: /atom.xml || fas fa-rss
   # Weibo: https://weibo.com/yourname || fab fa-weibo
   # Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -184,6 +185,7 @@ links_settings:
 
 links:
   'My Company: Meet Hive': https://www.hive-intel.com
+  'c1': 'https://0xc1.space/?from=legacy'
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -430,10 +432,10 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.geekzu.org
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -916,12 +918,12 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: cdnjs
+  plugins: custom
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
   # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
-  custom_cdn_url:
+  custom_cdn_url: http://cdnjs.aak1247.cn/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
 
 # Assets
 # Accelerate delivery of static files using a CDN
